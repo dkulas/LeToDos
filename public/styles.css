@@ -108,6 +108,11 @@ button#add {
   outline: none;
 }
 
+div#todos {
+  width: 70%;
+  margin: 0 auto;
+}
+
 p.footer {
   text-align: center;
   position: absolute;
