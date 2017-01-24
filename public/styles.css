@@ -89,6 +89,7 @@ input#task {
   font-size: 1.5em;
   border: 2px solid black;
   border-radius: 20px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.05);
 }
 
 button#add {
@@ -96,6 +97,7 @@ button#add {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 20px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.05);
 }
 
 p.footer {
