@@ -53,6 +53,14 @@ table {
 /*****************/
 /*****************/
 
+body {
+  font-family: sans-serif;
+}
+
+strong {
+  font-weight: 800;
+}
+
 header {
   width: 100%;
   height: 50px;
@@ -68,6 +76,14 @@ header h1 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   color: #FFF;
-  font-family: sans-serif;
   font-weight: 600;
+  font-size: 1.5em;
+}
+
+p.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
 }
