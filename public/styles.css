@@ -173,7 +173,7 @@ p.footer {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     input#task {
-      width: 90%;
+      width: 50%;
     }
 }
 
@@ -197,7 +197,7 @@ p.footer {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     input#task {
-      width: 90%;
+      width: 50%;
     }
 }
 
@@ -221,7 +221,7 @@ p.footer {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     input#task {
-      width: 90%;
+      width: 50%;
     }
 }
 
@@ -245,6 +245,6 @@ p.footer {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     input#task {
-      width: 90%;
+      width: 50%;
     }
 }
