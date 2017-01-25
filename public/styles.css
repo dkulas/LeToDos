@@ -109,6 +109,11 @@ button#add {
   outline: none;
   cursor: pointer;
   color: rgba(215,215,215,1);
+  transition: all 0.3s ease 0s;
+}
+
+button#add:hover {
+  background-color: #F1F1F1;
 }
 
 div#todos {
