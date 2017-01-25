@@ -91,12 +91,13 @@ div.createToDoDiv {
 }
 
 input#task {
-  font-size: 1.5em;
-  border: 2px solid black;
-  border-radius: 20px;
   box-shadow: 2px 3px 10px rgba(0,0,0,0.05);
   outline: none;
   text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 2em;
 }
 
 button#add {
