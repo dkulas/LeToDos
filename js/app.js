@@ -10,6 +10,11 @@ function get_todos() {
 function add() {
 	var task = document.getElementById("task").value;
 
+	if (task === "") {
+		alert("Must add an actual ToDo item!");
+		return;
+	}
+
 	var todos = get_todos();
 	todos.push(task);
 	localStorage.setItem("todo", JSON.stringify(todos));
