@@ -16,8 +16,13 @@ function add() {
 	}
 
 	var todos = get_todos();
-	todos.push(task);
-	localStorage.setItem("todo", JSON.stringify(todos));
+
+	if (todos.length >= 7) {
+		alert("Maximum amount of items reached (7)");
+	} else {
+		todos.push(task);
+		localStorage.setItem("todo", JSON.stringify(todos));
+	}
 
 	show();
 
