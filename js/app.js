@@ -17,7 +17,7 @@ function add() {
 
 	var todos = get_todos();
 
-	if (todos.length >= 7) {
+	if (todos.length >= 10) {
 		alert("Maximum amount of items reached (7)");
 	} else {
 		todos.push(task);
