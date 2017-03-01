@@ -3,12 +3,13 @@ var pID = document.getElementById("pID");
 var xMark = document.getElementById("xMark");
 
 qMark.addEventListener("click", function() {
-	pID.style.transition = "opacity 1.5s";
-	pID.style.opacity = 1;
+	pID.style.display = "block";
+	pID.style.zIndex = 10;
 });
 
 xMark.addEventListener("click", function() {
-	pID.style.opacity = 0;
+	pID.style.display = "none";
+	pID.style.zIndex = "none";
 });
 
 function get_todos() {
