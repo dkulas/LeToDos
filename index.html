@@ -5,10 +5,11 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" type="text/css" href="public/styles.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
-	<h1>LS ToDo App</h1>
+	
 </header>
 <noscript>
 	
@@ -17,12 +18,14 @@
 	<input type="" name="" id="task">
 	<button id="add">&#x2b;</button>
 </div>
-
 <div id="todos"></div>
-
-<script src="js/app.js"></script>
-<p class="footer">
-	Created by <strong><a href="http://dannykulas.com/" target="_blank">Danny Kulas</a></strong> using the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">Local Storage API</a></strong>
+<div class="infoDiv">
+	<i class="fa fa-question-circle" id="qMark" aria-hidden="true"></i>
+</div>
+<p class="infoP" id="pID">
+	<i class="fa fa-times" id="xMark" aria-hidden="true"></i>
+	This website was built using the HTML5 LocalStorage API.  For those of you who aren't familiar with LS, according to MDN (Mozilla Developer Network)... "The localStorage property allows you to access a local Storage object. localStorage is similar to sessionStorage. The only difference is that, while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the browsing session ends—that is, when the browser is closed."  Kinda ugly and full of jargon, no?
 </p>
+<script src="js/app.js"></script>
 </body>
 </html>

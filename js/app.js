@@ -1,3 +1,16 @@
+var qMark = document.getElementById("qMark");
+var pID = document.getElementById("pID");
+var xMark = document.getElementById("xMark");
+
+qMark.addEventListener("click", function() {
+	pID.style.transition = "opacity 1.5s";
+	pID.style.opacity = 1;
+});
+
+xMark.addEventListener("click", function() {
+	pID.style.opacity = 0;
+});
+
 function get_todos() {
 	var todos = new Array;
 	var todos_str = localStorage.getItem("todo");

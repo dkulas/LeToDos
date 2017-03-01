@@ -69,21 +69,22 @@ a {
 header {
   width: 100%;
   height: 50px;
-  background-color: black;
   margin: 0 0 20px 0;
 }
 
-header h1 {
-  position: relative;
-  display: inline-block;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  color: #FFF;
-  font-weight: 600;
+i.fa.fa-question-circle {
+  margin: 10px;
   font-size: 2em;
-  padding: 0 0 0 10px;
+  cursor: pointer;
+}
+
+i.fa.fa-times {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 2em;
 }
 
 div.createToDoDiv {
@@ -123,6 +124,11 @@ div#todos {
   margin: 0 auto;
 }
 
+ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
 ul li {
   font-size: 1.5em;
   margin: 20px;
@@ -145,12 +151,27 @@ ul li button:hover {
   background-color: #F1F1F1;
 }
 
-p.footer {
-  text-align: center;
+div.infoDiv {
   position: absolute;
-  bottom: 5px;
-  display: inline-block;
+  bottom: 0;
+  left: 0;
+}
+
+p.infoP {
   width: 100%;
+  height: 150px;
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 52px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  opacity: 0;
+  line-height: 1.5;
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
