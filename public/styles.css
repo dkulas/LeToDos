@@ -57,6 +57,9 @@ table {
 
 body {
   font-family: sans-serif;
+  background: #114357; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #114357 , #F29492); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #114357 , #F29492); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 strong {
@@ -137,16 +140,18 @@ ul {
 ul li {
   font-size: 1.5em;
   margin: 20px;
+  font-weight: 700;
+  color: #FFF;
 }
 
 ul li button {
   background-color: #fafafa;
-  border: 1px solid lightgray;
+  border: none;
   border-radius: 5px;
   box-shadow: 2px 3px 10px rgba(0,0,0,0.05);
   outline: none;
   cursor: pointer;
-  color: rgba(215,215,215,1);
+  color: #000;
   margin: 0 0 0 10px;
   transition: all 0.3s ease 0s;
   transform: translateY(-15%);
