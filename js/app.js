@@ -61,14 +61,16 @@ function show() {
 }
 
 function remove() {
-	var id = this.getAttribute("id");
-	var todos = get_todos();
-	todos.splice(id, 1);
-	localStorage.setItem("todo", JSON.stringify(todos));
+	if (confirm("Are you sure?")) {
+		var id = this.getAttribute("id");
+		var todos = get_todos();
+		todos.splice(id, 1);
+		localStorage.setItem("todo", JSON.stringify(todos));
 
-	show();
-
-	return false;
+		show();
+	} else {
+		return false;
+	}
 }
 
 document.getElementById('task').onkeydown = function(e){
