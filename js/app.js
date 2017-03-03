@@ -74,6 +74,7 @@ function remove() {
 document.getElementById('task').onkeydown = function(e){
    if(e.keyCode == 13){
      add();
+     e.currentTarget.value = "";
    }
 };
 document.getElementById("add").addEventListener("click", add);

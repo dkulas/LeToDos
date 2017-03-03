@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -101,6 +103,7 @@ input#task {
   font-size: 2em;
   box-sizing: border-box;
   width: 50%;
+  font-family: 'Indie Flower', cursive;
 }
 
 button#add {
@@ -113,6 +116,7 @@ button#add {
   cursor: pointer;
   color: rgba(215,215,215,1);
   transition: all 0.3s ease 0s;
+  font-family: 'Indie Flower', cursive;
 }
 
 button#add:hover {
@@ -122,6 +126,7 @@ button#add:hover {
 div#todos {
   width: 70%;
   margin: 0 auto;
+  font-family: 'Indie Flower', cursive;
 }
 
 ul {
@@ -195,7 +200,11 @@ ul li button:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     input#task {
-      width: 80%;
+      width: 95%;
+    }
+
+    button#add {
+      display: none;
     }
 
     div#todos {
@@ -223,7 +232,11 @@ ul li button:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     input#task {
-      width: 80%;
+      width: 95%;
+    }
+
+    button#add {
+      display: none;
     }
 
     div#todos {
@@ -251,7 +264,11 @@ ul li button:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
     input#task {
-      width: 80%;
+      width: 95%;
+    }
+
+    button#add {
+      display: none;
     }
 
     div#todos {
@@ -279,7 +296,11 @@ ul li button:hover {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
     input#task {
-      width: 80%;
+      width: 95%;
+    }
+
+    button#add {
+      display: none;
     }
 
     div#todos {
