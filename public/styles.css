@@ -81,6 +81,7 @@ i.fa.fa-question-circle {
   margin: 10px;
   font-size: 2em;
   cursor: pointer;
+  color: #FFF;
 }
 
 i.fa.fa-times {
@@ -142,6 +143,7 @@ ul li {
   margin: 20px;
   font-weight: 700;
   color: #FFF;
+  opacity: 1;
 }
 
 ul li button {
