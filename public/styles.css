@@ -57,9 +57,9 @@ table {
 
 body {
   font-family: sans-serif;
-  background: #114357; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #114357 , #F29492); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #114357 , #F29492); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #114357; 
+  background-image: -webkit-linear-gradient(to left, #114357 , #F29492);
+  background-image: linear-gradient(to left, #114357 , #F29492);
 }
 
 strong {
