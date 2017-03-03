@@ -32,7 +32,7 @@ function add() {
 	var todos = get_todos();
 
 	if (todos.length >= 10) {
-		alert("Maximum amount of items reached (7)");
+		alert("Maximum amount of items reached (10)");
 	} else {
 		todos.push(task);
 		localStorage.setItem("todo", JSON.stringify(todos));
@@ -71,5 +71,10 @@ function remove() {
 	return false;
 }
 
+document.getElementById('task').onkeydown = function(e){
+   if(e.keyCode == 13){
+     add();
+   }
+};
 document.getElementById("add").addEventListener("click", add);
 show();
