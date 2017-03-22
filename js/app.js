@@ -48,7 +48,7 @@ function show() {
 
 	var html = "<ul>";
 	for (var i=0; i<todos.length; i++) {
-		html += "<li>" + todos[i] + "<button class='remove' id='" + i + "'>&#10006;</button></li>";
+		html += "<li>" + todos[i] + "<button class='remove' id='" + i + "'>&#10006;</button></li><br>";
 	};
 	html += "</ul>";
 
@@ -61,8 +61,11 @@ function show() {
 }
 
 function remove() {
+
+	var id = this.getAttribute("id");
+	var element = document.getElementById(id);
+
 	if (confirm("Are you sure?")) {
-		var id = this.getAttribute("id");
 		var todos = get_todos();
 		todos.splice(id, 1);
 		localStorage.setItem("todo", JSON.stringify(todos));
@@ -79,5 +82,6 @@ document.getElementById('task').onkeydown = function(e){
      e.currentTarget.value = "";
    }
 };
+
 document.getElementById("add").addEventListener("click", add);
 show();

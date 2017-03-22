@@ -127,6 +127,26 @@ button#add:hover {
   background-color: #F1F1F1;
 }
 
+.spinClass {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 40ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  
+  animation-name: spin;
+  animation-duration: 40ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 div#todos {
   width: 70%;
   margin: 0 auto;
@@ -144,6 +164,7 @@ ul li {
   font-weight: 700;
   color: #FFF;
   opacity: 1;
+  display: inline-block;
 }
 
 ul li button {
@@ -174,6 +195,27 @@ p#pID {
   position: absolute;
   top: 0;
   display: none;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
