@@ -165,6 +165,9 @@ ul li {
   color: #FFF;
   opacity: 1;
   display: inline-block;
+/*  -webkit-animation:rotateXAxis 1s linear infinite;
+  -moz-animation:rotateXAxis 1s linear infinite;
+  animation:rotateXAxis 1s linear infinite;*/
 }
 
 ul li button {
@@ -197,26 +200,15 @@ p#pID {
   display: none;
 }
 
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
+.rotateXAxisClass {
+  -webkit-animation:rotateXAxis 1s linear infinite;
+  -moz-animation:rotateXAxis 1s linear infinite;
+  animation:rotateXAxis 1s linear infinite;
 }
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+
+@-moz-keyframes rotateXAxis { 100% { -moz-transform: rotatex(360deg); } }
+@-webkit-keyframes rotateXAxis { 100% { -webkit-transform: rotatex(360deg); } }
+@keyframes rotateXAxis { 100% { -webkit-transform: rotatex(360deg); transform:rotatex(360deg); } }
 
 /* ----------- iPhone 4 and 4S ----------- */
 

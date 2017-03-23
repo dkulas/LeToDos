@@ -76,6 +76,15 @@ function remove() {
 	}
 }
 
+$(function() {
+   $("ul li button").hover( function(){
+      $(this).parent().addClass("rotateXAxisClass");
+   },
+   function(){
+      $(this).parent().removeClass("rotateXAxisClass");
+   });
+});
+
 document.getElementById('task').onkeydown = function(e){
    if(e.keyCode == 13){
      add();
