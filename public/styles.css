@@ -119,32 +119,11 @@ button#add {
   outline: none;
   cursor: pointer;
   color: rgba(215,215,215,1);
-  transition: all 0.3s ease 0s;
   font-family: 'Indie Flower', cursive;
 }
 
 button#add:hover {
   background-color: #F1F1F1;
-}
-
-.spinClass {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 40ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 40ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 40ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  
-  animation-name: spin;
-  animation-duration: 40ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 
 div#todos {
@@ -165,9 +144,6 @@ ul li {
   color: #FFF;
   opacity: 1;
   display: inline-block;
-/*  -webkit-animation:rotateXAxis 1s linear infinite;
-  -moz-animation:rotateXAxis 1s linear infinite;
-  animation:rotateXAxis 1s linear infinite;*/
 }
 
 ul li button {
@@ -179,8 +155,6 @@ ul li button {
   cursor: pointer;
   color: #000;
   margin: 0 0 0 10px;
-  transition: all 0.3s ease 0s;
-  transform: translateY(-15%);
 }
 
 ul li button:hover {
@@ -199,16 +173,6 @@ p#pID {
   top: 0;
   display: none;
 }
-
-.rotateXAxisClass {
-  -webkit-animation:rotateXAxis 1s linear infinite;
-  -moz-animation:rotateXAxis 1s linear infinite;
-  animation:rotateXAxis 1s linear infinite;
-}
-
-@-moz-keyframes rotateXAxis { 100% { -moz-transform: rotatex(360deg); } }
-@-webkit-keyframes rotateXAxis { 100% { -webkit-transform: rotatex(360deg); } }
-@keyframes rotateXAxis { 100% { -webkit-transform: rotatex(360deg); transform:rotatex(360deg); } }
 
 /* ----------- iPhone 4 and 4S ----------- */
 
